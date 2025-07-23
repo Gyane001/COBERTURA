@@ -53,31 +53,11 @@ body {
     flex-grow: 1;
 }
 
-.nav-direita {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.pesquisar-label {
-    font-family: gothambold;
-    font-size: 16px;
-}
-
-.input {
-    padding: 8px;
-    border-radius: 10px;
+input {
+    padding: 5px;
+    border-radius: 5px;
     min-width: 200px;
     border: 1px solid #ccc;
-}
-
-.conteudo {
-    margin-top: 50px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
 }
 
 .instalacao {
@@ -88,16 +68,25 @@ body {
     margin-bottom: 20px;
 }
 
-.impressoras {
+.conteudo {
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.calculadora {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 200px;
-    gap: 10px;
+    width: 300px;
+    gap: 0px;
     font-family: gothambold;
     text-align: center;
 }

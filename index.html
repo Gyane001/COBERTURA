@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
@@ -12,41 +12,35 @@
 <body>
     <header class="rodape">
         <div class="nav-esquerda">
-            <img src="./img/logo.png" alt="Logo" class="logo" />
-            <button class="nav-btn">Inicio</button>
-
+            <img src="./imgs/logo.png" alt="Logo" class="logo" />
         </div>
-
         <h1 class="titulo">Pergolado</h1>
-
 
     </header>
 
-    <main id="conteudo" class="conteudo">
-        <h1 class="instalacao">Preencha as informações abaixo</h1>
+    <div class=" conteudo">
+        <div class="calculadora">
 
-        <!-- Exemplo de bloco de impressora -->
+            <body>
+                <h2>Calculadora de Chapa de Policarbonato</h2>
 
+                <label>Largura da estrutura (mm):</label><br>
+                <input type="number" id="largura"><br><br>
 
-        <div class="impressoras">
+                <label>Comprimento/ Queda da água (mm):</label><br>
+                <input type="number" id="comprimento"><br><br>
 
-            <div class="informacoesEstrutura">
-                <form>
-                    <label for="largura">Largura:</label><br>
-                    <input type="text" id="largura" name="largura"><br>
-                    <br>
-                    <label for="comprimento">Comprimento:</label><br>
-                    <input type="text" id="comprimento" name="comprimento">
-                    <br><br>
-                    <label for="espacamento">Espaçamento entre os caibros:</label><br>
-                    <input type="text" id="comprimento" name="comprimento">
-                    <br><br>
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                </form>
-            </div>
+                <label>Espaçamento entre os caibros (cm):</label><br>
+                <input type="number" id="espacamento"><br><br>
+
+                <button class="botao" onclick="calcular()">Calcular</button>
+
+                <h3>Resultado:</h3>
+                <div id="resultado"></div>
+
+                <script src="app.js"></script>
+            </body>
         </div>
-    </main>
-</body>
+    </div>
 
 </html>
