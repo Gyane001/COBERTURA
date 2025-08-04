@@ -5,4 +5,4 @@
 ---
 
 **Status do Projeto:** Em desenvolvimento  
-**Tecnologias Utilizadas:** HTML, CSS, JavaScript, (e outras tecnologias)
+**Tecnologias Utilizadas:** HTML, CSS, JavaScript, (e outras tecnologias).
