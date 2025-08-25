@@ -22,23 +22,39 @@
         <div class="calculadora">
 
             <body>
-                <h2>Calculadora de Chapa de Policarbonato</h2>
+                <h2>Calculadora de Pergolado</h2>
 
-                <label>Largura da estrutura (mm):</label><br>
-                <input type="number" id="largura"><br><br>
 
-                <label>Comprimento/ Queda da água (mm):</label><br>
-                <input type="number" id="comprimento"><br><br>
 
-                <label>Espaçamento entre os caibros (cm):</label><br>
-                <input type="number" id="espacamento"><br><br>
+                <div class="camposPreenchido"><br>
+
+                    <label>Largura da estrutura (mm):</label><br>
+                    <input type="number" id="largura"><br><br>
+
+                    <label> Comprimento (mm):</label><br>
+                    <input type="number" id="comprimento"><br><br>
+
+                    <label>Espaçamento entre os caibros (cm):</label><br>
+                    <input type="number" id="espacamento"><br><br>
+                </div>
+
+                <div class="tipoDePolicarbonato">
+                    <label>
+                        <input type="radio" name="tipoChapa" value="alveolar" checked>
+                        Alveolar
+                    </label>
+                    <label>
+                        <input type="radio" name="tipoChapa" value="compacto">
+                        Compacto
+                    </label>
+                </div> <br>
 
                 <button class="botao" onclick="calcular()">Calcular</button>
 
                 <h3>Resultado:</h3>
                 <div id="resultado"></div>
-
                 <script src="app.js"></script>
+
             </body>
         </div>
     </div>

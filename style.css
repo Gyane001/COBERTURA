@@ -53,6 +53,12 @@ body {
     flex-grow: 1;
 }
 
+.tipoDePolicarbonato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 input {
     padding: 5px;
     border-radius: 5px;
@@ -60,17 +66,8 @@ input {
     border: 1px solid #ccc;
 }
 
-.instalacao {
-    width: 100%;
-    text-align: center;
-    font-size: 26px;
-    font-family: gothambold;
-    margin-bottom: 20px;
-}
-
 .conteudo {
     margin-top: 50px;
-    padding: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -78,14 +75,11 @@ input {
 }
 
 .calculadora {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 300px;
+    width: 350px;
     gap: 0px;
     font-family: gothambold;
     text-align: center;
@@ -111,7 +105,7 @@ input {
 }
 
 .botao {
-    width: 100%;
+    width: 75%;
     height: 40px;
     font-family: gothambold;
     font-size: 14px;
