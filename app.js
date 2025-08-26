@@ -41,7 +41,17 @@ function calcular() {
     qtdChapas = Math.ceil(largura / larguraUsada);
 
     // Perfil Trapézio e Gaxeta
-    qtdPerfilTrapezio = Math.ceil(largura / (espacamentoCaibros * 10)); // cm -> mm
+    if (comprimento <= 750) {
+        qtdPerfilTrapezio = Math.ceil(largura / (espacamentoCaibros * 10) / 8);
+
+    } else if (comprimento <= 1500) {
+        qtdPerfilTrapezio = Math.ceil(largura / (espacamentoCaibros * 10) / 4);
+
+    } else if (comprimento <= 3000) {
+        qtdPerfilTrapezio = Math.ceil(largura / (espacamentoCaibros * 10) / 2);
+    }
+
+
     qtdGaxeta = qtdPerfilTrapezio * 12;
 
     // Arruelas e Parafusos (somente ALVEOLAR menor que 10mm)
@@ -74,6 +84,8 @@ function calcular() {
         numChapas = Math.ceil(qtdChapas / 2);
         reaproveitamento = true;
     }
+
+
 
     // Monta tabela HTML
     let tabela = `
