@@ -40,7 +40,7 @@ function calcular() {
     // Cálculo base de chapas
     qtdChapas = Math.ceil(largura / larguraUsada);
 
-    // Perfil Trapézio e Gaxeta
+    // Reaproveitamento de Perfil Trapézio
     if (comprimento <= 750) {
         qtdPerfilTrapezio = Math.ceil(largura / (espacamentoCaibros * 10) / 8);
 
@@ -49,14 +49,20 @@ function calcular() {
 
     } else if (comprimento <= 3000) {
         qtdPerfilTrapezio = Math.ceil(largura / (espacamentoCaibros * 10) / 2);
-    }
+    } else {
+        qtdPerfilTrapezio = Math.ceil(largura / (espacamentoCaibros * 10));
 
+    }
 
     qtdGaxeta = qtdPerfilTrapezio * 12;
 
     // Arruelas e Parafusos (somente ALVEOLAR menor que 10mm)
     if (tipoChapaSelecionada === "alveolar" && espessuraChapa !== "Chapa de 10mm") {
         qtdArruelasParafusos = Math.ceil(qtdChapas / 2) * 50;
+
+
+    } else if (tipoChapaSelecionada === "compacto") {
+        qtdArruelasParafusos = qtdChapas * 25;
     }
 
     // Fitas e Perfil U (somente ALVEOLAR)
@@ -70,7 +76,7 @@ function calcular() {
         qtdPerfilU = Math.ceil(perimetro / 6); // 1 perfil a cada 6 metros
     }
 
-    // Reaproveitamento
+    // Reaproveitamento de Chapas
     let reaproveitamento = false;
     let numChapas = qtdChapas;
 
